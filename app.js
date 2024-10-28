@@ -14,8 +14,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/', async (req, res) => {
-    const jsonData = req.body;
-    if (jsonData.phone === 'true') {
+    //const jsonData = req.body;
+    flag = 1;
+    //if (jsonData.phone === 'true') {
+    if( flag == 1) {
         client.calls
   .create({
     twiml: '<Response><Say>Ahoy, World!</Say></Response>',
