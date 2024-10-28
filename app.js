@@ -29,7 +29,7 @@ app.post('/', async (req, res) => {
     res.end()
 });
 
-const port = process.env.PORT || 80;
+const port = 80;
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://127.0.0.1:${port}`);
