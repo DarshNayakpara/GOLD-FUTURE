@@ -21,7 +21,7 @@ app.post('/', async (req, res) => {
         client.calls
   .create({
     twiml: '<Response><Say>Ahoy, World!</Say></Response>',
-    to: process.env.DARSH_PHONE_NUMBER, // Replace with the recipient's phone number
+    to: '+919687782811', // Replace with the recipient's phone number
     from: '+16692315172' // Use the purchased Twilio phone number as the "From" number
   })
   .then(call => console.log(call.sid));
